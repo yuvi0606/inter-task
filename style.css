@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.page{
+    width: 100%;
+    padding: 25px;
+    background-image: url(/carousel-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.page .nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 18%;
+}
+.nav .log{
+    display: none;
+}
+.nav .log h1 span{
+    color: chocolate;
+}
+.nav ul{
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+    
+}
+.nav ul li{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav ul li a:hover{
+    color: chocolate;
+}
+/* .nav .sch input{
+    border: none;
+    background: transparent;
+    
+}
+.nav .sch{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(215, 209, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+} */
+.nav .bug{
+    width: 28px;
+    height: 4px;
+    background-color: rgb(224, 218, 218);
+    margin-top: 3px;
+    display: none;
+}
+.con{
+    position: absolute;
+    top: 400px;
+    left: 30%;
+    color: aliceblue;
+    text-align: center;
+}
+.con p{
+    font-weight: 600;
+    font-size: 1.3em;
+    color: chocolate;
+    text-transform: uppercase
+}
+.con h1{
+    text-transform: uppercase;
+    font-size: 3em;
+
+}
+.con button{
+    background-color: chocolate;
+    padding: 10px;
+    font-size: 1.3em;
+    color: white;
+    text-transform: uppercase;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+}
+/* .page2 .list{
+    width: 20%;
+    height: 20%;
+    
+} */
+.boxs{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+}
+.box1{
+    height: 30vh;
+    width: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.box1 .a i{
+    font-size: 100px;
+    margin: 10px;
+    color: chocolate;
+}
+.box1 .b{
+    width: 70%;
+    padding: 10px;
+    text-align: left;
+}
+.box1 .b p{
+    margin-top: 10px;
+}
+
+.box2{
+    height: 30vh;
+    width: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.box2 .a i{
+    font-size: 100px;
+    margin: 10px;
+    color: chocolate;
+
+}
+.box2 .b{
+    width: 70%;
+    padding: 10px;
+    text-align: left;
+}
+.box3{
+    height: 30vh;
+    width: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.box3 .a i{
+    font-size: 100px;
+    margin: 10px;
+    color: chocolate;
+
+}
+.box3 .b{
+    width: 70%;
+    padding: 10px;
+    text-align: left;
+}
+
+@media all and (max-width:992px){
+    .page .nav{
+        display: none;
+    }
+    .page .con{
+        position: absolute;
+        left: 15%;
+    }
+    .nav .burgar{
+        display: block;
+        color: white;
+    }
+    .boxs{
+        flex-direction: column;
+        width: 100%;
+    }
+    .box1{
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+    .box2{
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+    .box3{
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+    .box2 .b{
+        margin-left: 45px;
+    }
+}
+
+@media all and (max-width:562px){
+    .page .nav{
+        display: none;
+    }
+    .page .con{
+        position: absolute;
+        left: 15%;
+    }
+    .boxs{
+        flex-direction: column;
+       
+    }
+
+    .box1 {
+        width: 100%;
+    
+    }
+    .box2 {
+        width: 100%;
+        padding: 10px;
+    
+    }
+    .box2 .b{
+        margin-left: 45px;
+    }
+    .box3 {
+        width: 100%;
+        padding: 10px;
+    
+    }
+}
